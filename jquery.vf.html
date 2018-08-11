@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+    <body>
+        <form method="post">
+<input name="un" type="text" placeholder="text" value="" />
+<br />
+<br />
+<input name="deux" type="tel" placeholder="tel" value="" />
+<br />
+<br />
+<input name="trois" type="password" placeholder="password" value="" />
+<br />
+<br />
+<input name="quatre" type="email" placeholder="email" value="" />
+<br />
+<br />
+<input name="cinq" type="number" placeholder="number" value="" />
+<br />
+<br />
+            <input class="submit" type="submit" />
+        </form>
+        <script src="jquery.min.js"></script>
+    <script src="jquery.vf.js"></script>
+    
+    <script>
+        $('.submit').vf({
+            excludes : ['cinq', 'un']
+        })
+    </script>
+    </body>
+</html>
